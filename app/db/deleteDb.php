@@ -9,6 +9,9 @@ $pdo->exec("DROP TABLE users");
 $pdo->exec("DROP TABLE posts");
 $pdo->exec("DROP TABLE comments");
 $pdo->exec("DROP TABLE categories");
+$pdo->exec("DROP TABLE users_posts");
+$pdo->exec("DROP TABLE posts_categories");
+$pdo->exec("DROP TABLE posts_comments");
 
 //on réactivera les FK après la suppression des 2 tables
 $pdo->exec("SET FOREIGN_KEY_CHECKS = 1");

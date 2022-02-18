@@ -22,8 +22,7 @@
     $pdo->exec("CREATE TABLE posts (
         id INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
         user_id int DEFAULT NULL,
-        title VARCHAR(255) NOT NULL,
-        chapo VARCHAR(255) NOT NULL,
+        title VARCHAR(255) NOT NULL,        
         content text NOT NULL,
         image VARCHAR(255) NOT NULL,
         created_at TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
